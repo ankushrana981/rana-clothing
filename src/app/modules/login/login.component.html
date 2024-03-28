@@ -1,0 +1,23 @@
+<section class="login-page">
+    <div class="container">
+        <h1 class="text-center mt-3">Login Page</h1>
+
+        <form action="" (ngSubmit)="submitForm()">
+            <div class="mt-5 m-auto col-3 border p-3 rounded">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="first" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary"> Submit</button>
+                    <button class="btn btn-primary ms-2" routerLink="/sign-up">Sign UP</button> 
+                </div>
+               
+            </div>
+        </form>
+    </div>
+</section>

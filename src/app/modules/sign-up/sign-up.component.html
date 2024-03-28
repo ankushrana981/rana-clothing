@@ -1,0 +1,34 @@
+<section class="sign-up">
+          <div class="container">
+                    <h1 class="text-center mt-3">Sign Up </h1>
+          
+          <form action="" (ngSubmit)="signUp()">
+                   <div class="mt-5 col-3 m-auto border p-3 rounded">
+                    <div class="mb-3">
+                              <label for="Name" class="form-label">Name</label>
+                              <input type="text" class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone:true}">
+                    </div>
+                    <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="email">
+                    </div>
+                    <div class="mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="password">
+                    </div>
+                    <div class="mb-3">
+                              <label for="confirmPassword" class="form-label">Confirm Password</label>
+                              <input type="password" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="confirmPassword">
+                    </div>
+                    <div class="mb-3">
+                              <label for="phone" class="form-label">Phone</label>
+                              <input type="number" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phone">
+                    </div>
+                    <div class="mb-3">
+                              <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                   </div> 
+          </form>
+          </div>
+</section>
+
