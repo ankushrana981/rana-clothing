@@ -1,15 +1,15 @@
-.main-header{
-          position: relative;
-          z-index: 999;
+.main-header {
+  position: relative;
+  z-index: 999;
 }
-.navbar-brand{
-          img{
-                    height: 50px;
-                    width: 50px;
-                    margin-left: 20px;
-          }
+.navbar-brand {
+  img {
+          height: 100%;
+          width: 30%;
+          margin-left: 20px;
+  }
 }
-.nav-link{
-          text-transform: capitalize;
-          margin: 18px;
+.nav-link {
+  text-transform: capitalize;
+  margin: 18px;
 }

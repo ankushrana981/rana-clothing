@@ -3,13 +3,48 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 
-#page{
+#page {
   width: 100%;
   height: 100%;
   background-color: #fff;
 }
+strong {
+  font-weight: 600;
+}
+.navbar-nav {
+  .nav-item{
+    a{
+      color: #252525;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover{
+        color: #c59d5f;
+      }
+    }
+  }
+}
+.main-content {
+  display: block;
+  max-width: 760px;
+  margin: auto;
+  h2 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #252525;
+    margin-top: 42px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  p {
+    line-height: 1.7;
+    font-size: 17px;
+    color: #515151;
+  }
+}
 
-div.page{
+div.page {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -18,7 +53,7 @@ div.page{
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 a {
   text-decoration: none;
@@ -27,4 +62,9 @@ a {
 .star {
   color: #c59d5f;
   font-weight: 900;
+}
+
+.banner-section {
+  position: relative;
+  overflow: hidden;
 }
