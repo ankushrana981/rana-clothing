@@ -1,32 +1,32 @@
 <section class="main-header">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand col-2" href="#"><img src="../../../assets/images/company-logo.png" alt="company-logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <a class="navbar-brand col-6 col-md-2" href="#"><img src="../../../assets/images/company-logo.png" alt="company-logo"></a>
+                    <button class="navbar-toggler me-3" type="button" (click)="onclickToggle()" data-toggle="collapse"
                               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                               aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                              <ul class="navbar-nav ms-5">
-                                        <li class="nav-item active">
+                              <ul class="navbar-nav ms-md-5 ms-3">
+                                        <li class="nav-item active" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/home">Home</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/about">About Us</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/bespoke">Bespoke</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/fabrics">Fabrics</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/alterations">Alterations</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/services">Services</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item" (click)="onclickToggle()">
                                                   <a class="nav-link" routerLink="/contact">Contact Us</a>
                                         </li>
                               </ul>

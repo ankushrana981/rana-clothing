@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -9,5 +9,18 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  constructor(private elRef: ElementRef){
 
+  }
+  onclickToggle() {
+    const navbarCollapse = this.elRef.nativeElement.querySelector('.navbar-collapse');
+    const isCollapsed = navbarCollapse.classList.contains('show-toogle');
+    console.log(isCollapsed, navbarCollapse,"classes");
+    
+    if (isCollapsed) {
+        navbarCollapse.classList.remove('show-toogle');
+    } else {
+        navbarCollapse.classList.add('show-toogle');
+    }
+}
 }
