@@ -12,4 +12,7 @@ export class ApiService {
   login(data : any){
    return this.http.post(this.url + 'login', data)
   }
+  signup(data: any){
+    return this.http.post(this.url + 'signup', data)
+  }
 }

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { BannerComponent } from '../../shared/banner/banner.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerComponent],
+  imports: [BannerComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

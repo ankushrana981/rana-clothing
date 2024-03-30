@@ -8,7 +8,7 @@
                 d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
             </path>
         </svg>
-        <div class="top--btn">
+        <div class="top--btn" (click)="onclicktop()">
             <span class="arrow-btn btn--top"></span>
             <span class="arrow-btn btn--bottom"></span>
         </div>
@@ -43,12 +43,12 @@
     <div class="copy-right p-5 text-center">
         <h5 class="text-uppercase">Developed by <span class="author-name ">Ankush Rana</span></h5>
         <ul class="d-flex justify-content-center">
-            <li class="menu-item"><a href="">Home</a></li>
-            <li class="menu-item"><a href="">About Us</a></li>
-            <li class="menu-item"><a href="">Fabrics</a></li>
-            <li class="menu-item"><a href="">Alterations</a></li>
-            <li class="menu-item"><a href="">Services</a></li>
-            <li class="menu-item"><a href="">Contact Us</a></li>
+            <li class="menu-item"><a routerLink="/home">Home</a></li>
+            <li class="menu-item"><a routerLink="/about">About Us</a></li>
+            <li class="menu-item"><a routerLink="/fabrics">Fabrics</a></li>
+            <li class="menu-item"><a routerLink="/alterations">Alterations</a></li>
+            <li class="menu-item"><a routerLink="/services">Services</a></li>
+            <li class="menu-item"><a routerLink="/contact">Contact Us</a></li>
         </ul>
     </div>
 </section>

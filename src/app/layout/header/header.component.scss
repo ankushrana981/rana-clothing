@@ -5,11 +5,21 @@
 .navbar-brand {
   img {
           height: 100%;
-          width: 30%;
+          width: 75%;
           margin-left: 20px;
   }
 }
 .nav-link {
   text-transform: capitalize;
   margin: 18px;
+}
+.login-button{
+  button{
+    background-color:#182047;
+    color: #fff;
+    &:hover{
+      color: #c59d5f;
+      background-color: transparent;
+    }
+  }
 }

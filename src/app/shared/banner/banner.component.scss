@@ -18,8 +18,8 @@
       margin-left: 10px;
       margin-top: -8px;
       transform: rotate(45deg);
-      border-bottom: 2px solid #000;
-      border-right: 2px solid #000;
+      border-bottom: 2px solid #5f7da5;
+      border-right: 2px solid #5f7da5;
     }
   }
   .banner-content {
@@ -43,11 +43,11 @@
     font-size: 65px;
     color: #e3b268;
     font-weight: 400;
-    font-family: p22-marcel-script-pro, "p22-marcel-script-pro", Palatino, serif;
+    font-family: 'Caveat';
   }
   .headline__primary {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     text-shadow: 0px 2px 4px #000;
     font-weight: 200;
@@ -83,6 +83,16 @@
     }
     .line--right {
       left: 58%;
+    }
+  }
+  .headline__description{
+    .descrp{
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .button{
+      font-weight: 600;
+      color: #5f7da5;
     }
   }
 }

@@ -10,7 +10,7 @@ import { BannerComponent } from '../../shared/banner/banner.component';
 })
 export class BespokeComponent {
   bannerContent:any = {
-    img:"/assets/images/banner-img-3.jpg",
+    img:"/assets/images/fabric-img-2.avif",
     title:"Be spoke"
   }
 }

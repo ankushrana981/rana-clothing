@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ApiService } from '../../core/services/api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HttpClientModule],
+  providers:[ApiService],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.scss'
 })
@@ -13,10 +16,9 @@ export class SignUpComponent implements OnInit {
     name:string = ''
     email:string= ''
     password:string= ''
-    confirmPassword:string= ''
     phone:string= ''
  
-  constructor(){
+  constructor(private api: ApiService){
 
   }
 
@@ -28,10 +30,15 @@ export class SignUpComponent implements OnInit {
       name: this.name,
       email: this.email,
       password: this.password,
-      confirmPassword: this.confirmPassword,
       phone: this.phone
     }
     console.log(this.signUpForm,"Details ")
+    this.api.signup(this.signUpForm).subscribe(data=>{
+      console.log("signUp successful", data )
+    }, error=>{
+      console.log(error,"error")
+    })
     this.signUpForm = {}
   }
+  
 }
