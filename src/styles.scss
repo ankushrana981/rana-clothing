@@ -3,22 +3,23 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 
-
 @font-face {
-  font-family:'Comfortaa';
-  src: url('assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format('truetype');
+  font-family: "Comfortaa";
+  src: url("assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-@font-face{
-  font-family: 'Caveat';
-  src: url('assets/fonts/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+@font-face {
+  font-family: "Caveat";
+  src: url("assets/fonts/Caveat/Caveat-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-body{
-  font-family: 'Comfortaa';
+body {
+  font-family: "Comfortaa";
 }
 
 #page {
@@ -67,15 +68,15 @@ div.page {
 }
 
 .button {
-  &.refer{
+  &.refer {
     background-color: #e3b268;
     color: #fff;
-    }
+  }
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   letter-spacing: 0.2em;
-  &:hover{
+  &:hover {
     background-color: #c59d5f;
     color: #fff !important;
   }
@@ -92,4 +93,27 @@ a {
 .banner-section {
   position: relative;
   overflow: hidden;
+}
+// responsiveness
+@media (max-width: 767px) {
+  ul{
+    padding-left: 0 !important;
+  }
+  .button {
+    padding: 7px 13px;
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+  }
+
+  .right-section {
+    img {
+      width: 270px !important;
+    }
+  }
+  .headline__secondary {
+    font-size: 40px !important;
+  }
+  .headline__primary {
+    font-size: 22px !important;
+  }
 }
